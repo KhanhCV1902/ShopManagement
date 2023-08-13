@@ -19,6 +19,6 @@ public class HomeController {
 	public String homePage(Model model) {
 		List<CustomerEntity> customers = customerSevice.getAllCustomer();	
 		model.addAttribute("customers", customers);
-		return "index";	
+		return "home";	
 	}
 }
